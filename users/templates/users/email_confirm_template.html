@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h5.message{
+            margin-top: -10px;
+        }
+        ul.user-list{
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Hello,</h3>
+    {% block content %}
+    <h5 class="message">This email was sent to you because you signup on Orion Insurance mobile app.</h5>
+    <p>If you believe you got this email in error, please ignore.</p>
+
+    <p>Please see verification code: <strong> {{string}}</strong></p>
+
+      {% endblock content %}
+    <h5>Thanks, <br>Orion Mobile App.</h5>
+
+</body>
+</html>

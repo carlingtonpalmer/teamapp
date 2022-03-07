@@ -1,0 +1,28 @@
+# python generated files
+*.pyc
+
+
+
+# virtual environment
+/env/
+/venv/
+
+# static files
+/media/upload/*
+!/media/upload/.gitkeep
+
+/media/claim-forms/*
+!/media/claim-forms/.gitkeep
+
+/media/files/*
+!/media/files/.gitkeep
+
+# IDE config
+.idea/
+
+#local DB
+db.sqlite3
+
+# test
+# text.txt
+

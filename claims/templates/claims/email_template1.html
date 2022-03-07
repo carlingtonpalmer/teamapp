@@ -1,0 +1,36 @@
+{% block subject %}{% endblock %}
+
+{% block plain %}{% endblock %}
+
+{% block html %}
+<html>
+  <head>
+  </head>
+  <body style="font-family: sans-serif; background: #f5f5f5;">
+    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+     <tr>
+       <td width="100%" align="center">
+         <table cellspacing="0" cellpadding="0" border="0" width="480">
+           <tr>
+             <td style="background-color: #444444; padding: 18px;"><img alt="UnFake.us" src="{{BASE_URL}}{% static 'img/header-logo.png' %}"></td>
+           </tr>
+           <tr>
+             <td style="background-color: white; padding:18px 18px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; color: #444444" width="480" >
+               {% block html_main %}
+               {% endblock %}
+             </td>
+           </tr>
+           <tr>
+             <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; color: #999999; padding: 12px 18px">
+               <p>
+                 You received this email because you signed up for an UnFake.us account with this email. If you do not want to to hear from us, please reply to let us know.
+               </p>
+             </td>
+           </tr>
+         </table>
+       </td>
+     </tr>
+   </table>
+  </body>
+</html>
+{% endblock %}

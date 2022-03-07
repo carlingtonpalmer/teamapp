@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h5.message{
+            margin-top: -10px;
+        }
+        ul.user-list{
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Hello Admin,</h3>
+    {% block content %}
+    <h5 class="message">User <strong>{{user.first_name}}</strong> has requested a new Quote.</h5>
+    <p>
+        Quote type: <Strong>{{quote_type}}</Strong>  
+        <br> 
+        Chassis #: <strong>{{chassis}}</strong>
+        <br>
+        Cost: <Strong>{{cost}}</Strong>  
+        <br> 
+        Vehicle use: <strong>{{vehicle_use}}</strong>
+        <br> 
+        Claim free driving: <strong>{{claim_free_driving}}</strong>
+
+    </p>
+      <!-- <h5 class="message">User {{user.first_name}},  have signed up for Product ({Supplemental Life}).</h5>   -->
+
+    <h3>User details</h3>
+
+    <ul class="user-list">
+        <li>Name: <strong>{{user.first_name}} {{user.last_name}}</strong> </li>
+        <li>Email: <strong>{{user.email}}</strong></li>
+        <li>DOB: <strong>{{user.dob}}</strong></li>
+        <li>Gender: <strong>{{user.gender}}</strong></li>
+        <li>Phone #: <strong>{{user.phone_no}}</strong></li>
+        <li>Home Address: <strong>{{user.home_address}}</strong></li>
+        <li>Employee #: <strong>{{user.employee_number}}</strong></li>
+        <li>TRN: <strong>{{user.trn}}</strong></li>   
+        <li>Employer: <strong>{{user.employer}}</strong></li>     
+    </ul>
+
+      {% endblock content %}
+    <h5>Thanks, <br>Orion Mobile App.</h5>
+
+</body>
+</html>

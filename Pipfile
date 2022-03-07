@@ -1,0 +1,26 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+djangorestframework = "==3.11.0"
+psycopg2 = "==2.8.4"
+psycopg2-binary = "==2.8.4"
+gunicorn = "==19.7.1"
+whitenoise = "*"
+asgiref = "==3.2.3"
+pytz = "==2019.3"
+sqlparse = "==0.3.0"
+Django = "==2.2.9"
+django-rest-auth = "*"
+djangorestframework-jwt = "*"
+django-allauth = "*"
+pipfile = "*"
+pillow = "*"
+django-crispy-forms = "*"
+
+[requires]
+python_version = "3.7"
